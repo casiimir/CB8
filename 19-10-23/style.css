@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightseagreen;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.wrapper:hover {
+  background-color: lightseagreen;
+  color: white;
+}
+
+.title,
+p {
+  margin: 6px;
+  padding: 12px;
+}
+
+.main-image {
+  height: 200px;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.shake {
+  animation: shake 10s ease-in-out infinite;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
