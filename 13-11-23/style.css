@@ -1,0 +1,13 @@
+.quotes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quote-card {
+  padding: 12px 24px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
