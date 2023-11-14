@@ -1,0 +1,31 @@
+.robo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.robo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 160px;
+  background-color: #f9f5ea;
+  border-radius: 12px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+.robo img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.robo h4,
+p {
+  margin: 4px 0;
+  padding: 4px 0;
+}
+
+.robo .text {
+  padding: 0 10px;
+}
