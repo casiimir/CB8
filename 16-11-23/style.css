@@ -1,0 +1,61 @@
+img {
+  width: 200px;
+}
+
+.popup {
+  position: fixed;
+  top: 10%;
+  left: calc(50% - 170px);
+  display: flex;
+  padding: 12px 24px;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+  background-color: lightcoral;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.popup button {
+  border: 0;
+  width: 120px;
+  height: 30px;
+  background-color: white;
+  color: lightcoral;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+
+.popup button:hover {
+  background-color: lightcoral;
+  color: white;
+  border: 1px solid white;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 100px);
+  background-color: white;
+  padding: 10px 20px;
+  width: 200px;
+  height: 100px;
+
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.product {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.product .text {
+  padding: 6px 12px;
+}
