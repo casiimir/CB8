@@ -1,0 +1,33 @@
+#root {
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 1px solid gray;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid lightgray;
+}
+
+.todo-item p {
+  padding-left: 30px;
+}
+
+.todo-item-head {
+  display: flex;
+}
+
+.todo-item-head h3 {
+  padding-left: 30px;
+}
