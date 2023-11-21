@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  width: 400px;
+}
+
+.carousel-image {
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.75);
+  -webkit-user-drag: none;
+}
+
+.carousel-btn-left, .carousel-btn-right {
+  position: absolute;
+  top: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 100%;
+  background-color: rgba(0,0,0,0.35);
+  color: white;
+  font-size: 1.2rem;
+  font-family: Impact, sans-serif;
+  cursor: pointer;
+}
+
+.carousel-btn-left {
+  left: -25px;
+}
+
+.carousel-btn-right {
+  right: -25px;
+}
