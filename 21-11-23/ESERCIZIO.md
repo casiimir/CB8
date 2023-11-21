@@ -1,6 +1,6 @@
 # Esercizio 1
 
-Sulla base della lezione del giorno, effettuare una chiamata al seguente endpoint e richiedere una lista di immagini. Attenzione, usare Async/Await Fare quindi il console log che presenti i soli valori contenuti dentro la chiave `download_url`.
+Sulla base della lezione del giorno, effettuare una chiamata al seguente endpoint e richiedere una lista di immagini. Fare quindi il console log che presenti i soli valori contenuti dentro la chiave `download_url`.  Attenzione, usare Async/Await.
 
 Endpoint: `https://picsum.photos/v2/list`
 
