@@ -1,0 +1,99 @@
+body {
+  color: rgb(26, 3, 38);
+}
+
+.images-list {
+  padding: 24px 12px;
+  display: flex;
+  gap: 10px;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 200px;
+
+  overflow-x: scroll;
+}
+
+.image-card {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  height: 200px;
+  background-color: whitesmoke;
+  animation: bouncing 2s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.image-card img {
+  width: 200px;
+  height: 150px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.image-card p {
+  font-weight: bold;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.rect {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-bottom: 40px solid black;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top-right-radius: 500px;
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.rect::after {
+  content: "";
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  top: 0;
+  left: 2px;
+  border-top: 40px solid white;
+  border-radius: 100%;
+}
+
+.game {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.squarino {
+  position: absolute;
+  bottom: 0;
+  left: 8px;
+  width: 50px;
+  height: 50px;
+  background-color: coral;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* ANIMATION - Bouncing */
+@keyframes bouncing {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
