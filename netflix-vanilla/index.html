@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nextflix clone - Vanilla JS</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Navbar Desktop -->
+    <!-- <nav>
+      <img
+        src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=100&h=456"
+        alt="netflix-clone-logo"
+      />
+      <ul class="links-list">
+        <li>Home</li>
+        <li>TV Shows</li>
+        <li>Movies</li>
+        <li>New & Popular</li>
+        <li>My List</li>
+        <li>Browse by Languages</li>
+      </ul>
+      <ul class="info-list">
+        <li>🔍</li>
+        <li>Children</li>
+        <li>O</li>
+      </ul>
+    </nav> -->
+
+    <nav class="navbar">
+      <div class="search">
+        <img
+          src="https://logosandtypes.com/wp-content/uploads/2020/07/netflix.png"
+          alt="netflix-clone-logo"
+        />
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="links">
+        <ul class="links-list">
+          <li>TV Shows</li>
+          <li>Movies</li>
+          <label for="categories">Categories</label>
+          <select name="categories" id="categories">
+            <option value=""></option>
+          </select>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Da ridefinire i testi della hero -->
+    <section class="hero">
+      <div class="overlay"></div>
+      <img
+        src="https://image.tmdb.org/t/p/w1280/rkB4LyZHo1NHXFEDHl9vSD9r1lI.jpg"
+        alt="image-hero"
+      />
+      <div class="hero-title">
+        <h1>Title</h1>
+      </div>
+      <!-- <div class="hero-info">
+        <p>#2 in TV Shows Today</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos
+          iste distinctio placeat in. Ea, inventore?
+        </p>
+        <button>Play</button>
+        <button>More Info</button>
+      </div> -->
+    </section>
+
+    <main>
+      <div class="lists-container">
+        <h3>Most Popular</h3>
+        <div class="cards-list">
+          <img
+            class="card-item"
+            src="https://image.tmdb.org/t/p/w154/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg"
+            alt="card-item-img"
+          /><img
+            class="card-item"
+            src="https://image.tmdb.org/t/p/w154/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg"
+            alt="card-item-img"
+          /><img
+            class="card-item"
+            src="https://image.tmdb.org/t/p/w154/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg"
+            alt="card-item-img"
+          />
+        </div>
+      </div>
+      <div class="lists-container">
+        <h3>Most Popular</h3>
+        <div class="cards-list">
+          <img
+            class="card-item"
+            src="https://image.tmdb.org/t/p/w154/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg"
+            alt="card-item-img"
+          /><img
+            class="card-item"
+            src="https://image.tmdb.org/t/p/w154/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg"
+            alt="card-item-img"
+          /><img
+            class="card-item"
+            src="https://image.tmdb.org/t/p/w154/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg"
+            alt="card-item-img"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <ul class="mobile-footer">
+        <li>
+          <img src="https://img.icons8.com/ios/50/cottage--v1.png" alt="Shop" />
+          <p>Home</p>
+        </li>
+        <li>
+          <img
+            src="https://img.icons8.com/ios/50/shopping-bag--v1.png"
+            alt="Shop"
+          />
+          <p>Shop</p>
+        </li>
+        <li>
+          <img
+            src="https://img.icons8.com/ios/50/film-reel--v1.png"
+            alt="Coming Soon"
+          />
+          <p>Coming Soon</p>
+        </li>
+        <li>
+          <img
+            src="https://img.icons8.com/ios/50/smiling.png"
+            alt="Fast Laughs"
+          />
+          <p>Fast Laughs</p>
+        </li>
+        <li>
+          <img
+            src="https://img.icons8.com/ios/50/download--v1.png"
+            alt="Downloads"
+          />
+          <p>Downloads</p>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
