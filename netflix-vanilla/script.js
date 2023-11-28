@@ -1,34 +1,64 @@
-// fetch("https://api.themoviedb.org/3/tv/top_rated", {
-//   method: "GET",
-//   headers: {
-//     accept: "application/json",
-//     Authorization:
-//       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjZGNiNzY2YTllNWM0N2ZkOGMzYzg0ODRlZjVjZTY4OSIsInN1YiI6IjY1MGQ0ZDJhZjkyNTMyMDBhZGUxMTJkMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KIhoXnYP6YFHse-oAlJpKUpNxh599De8UFJI3BnxvTE",
-//   },
-// })
-//   .then((res) => res.json())
-//   .then((data) => console.log(data));
+import { httpGET } from "./modules/http.js";
+import {
+  cardElGen,
+  cardsListElGen,
+  listsContainerElGen,
+} from "./modules/components.js";
 
-// {
-//   "adult": false,
-//   "backdrop_path": "/rkB4LyZHo1NHXFEDHl9vSD9r1lI.jpg",
-//   "genre_ids": [
-//     16,
-//     18,
-//     10765,
-//     10759
-//   ],
-//   "id": 94605,
-//   "origin_country": [
-//     "US"
-//   ],
-//   "original_language": "en",
-//   "original_name": "Arcane",
-//   "overview": "Amid the stark discord of twin cities Piltover and Zaun, two sisters fight on rival sides of a war between magic technologies and clashing convictions.",
-//   "popularity": 106.243,
-//   "poster_path": "/fqldf2t8ztc9aiwn3k6mlX3tvRT.jpg",
-//   "first_air_date": "2021-11-06",
-//   "name": "Arcane",
-//   "vote_average": 8.742,
-//   "vote_count": 3443
-// }
+const asyncListContainerElGen = async (endpoint, title) => {
+  const data = await httpGET(endpoint);
+  const listContainerEl = listsContainerElGen(title);
+  const cardsListEl = cardsListElGen();
+
+  data.results.map((serie) => cardsListEl.append(cardElGen(serie)));
+  listContainerEl.append(cardsListEl);
+
+  return listContainerEl;
+};
+
+const mainSectionEl = document.querySelector(".main");
+
+// 1 STEP
+// httpGET("/tv/top_rated").then((data) => {
+//   const listContainerEl = listsContainerElGen("Top Rated");
+//   const cardsListEl = cardsListElGen();
+
+//   data.results.map((serie) => cardsListEl.append(cardElGen(serie)));
+
+//   listContainerEl.append(cardsListEl);
+//   mainSectionEl.append(listContainerEl);
+// });
+
+// httpGET("/tv/popular").then((data) => {
+//   const listContainerEl = listsContainerElGen("Popular");
+//   const cardsListEl = cardsListElGen();
+
+//   data.results.map((serie) => cardsListEl.append(cardElGen(serie)));
+
+//   listContainerEl.append(cardsListEl);
+//   mainSectionEl.append(listContainerEl);
+// });
+
+// 2 STEP
+// asyncListContainerElGen("/movie/upcoming", "Movies - Upcoming").then(
+//   (element) => mainSectionEl.append(element)
+// );
+
+// asyncListContainerElGen("/movie/now_playing", "Movies - Now Playing").then(
+//   (element) => mainSectionEl.append(element)
+// );
+
+// asyncListContainerElGen("/tv/top_rated", "Serie Tv - Top Rated").then(
+//   (element) => mainSectionEl.append(element)
+// );
+// asyncListContainerElGen("/tv/popular", "Serie Tv - Popular").then((element) =>
+//   mainSectionEl.append(element)
+// );
+
+// 3 STEP
+Promise.all([
+  asyncListContainerElGen("/movie/upcoming", "Movies - Upcoming"),
+  asyncListContainerElGen("/movie/now_playing", "Movies - Now Playing"),
+  asyncListContainerElGen("/tv/top_rated", "Serie Tv - Top Rated"),
+  asyncListContainerElGen("/tv/popular", "Serie Tv - Popular"),
+]).then((elements) => elements.map((el) => mainSectionEl.append(el)));
