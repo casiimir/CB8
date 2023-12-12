@@ -1,0 +1,17 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: lightgray;
+  width: 120px;
+  height: 200px;
+}
+
+.Card img {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+
+  width: 100%;
+  height: 160px;
+}
