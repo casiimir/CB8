@@ -1,4 +1,6 @@
 import CardList from './components/cardList/CardList'
+import Navbar from './components/navbar'
+import Footer from './components/footer'
 import './App.css'
 
 function App() {
@@ -69,6 +71,7 @@ function App() {
 
   return (
     <div className='App'>
+      <Navbar />
       {/* <button>Ciao</button> */}
       {/* <Button textContent="cliccami!" color="white" />
       <Button textContent="Accetta!" />
@@ -77,6 +80,7 @@ function App() {
       <CardList cardListObj={{ title: "Fantasy", list: imagesList2 }} />
       {/* <CardList cardListObj={{ title: "Sci-Fi" }} />
       <CardList cardListObj={{ title: "Adventure" }} /> */}
+      <Footer />
     </div>
   )
 }

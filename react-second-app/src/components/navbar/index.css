@@ -1,0 +1,21 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 2px solid lightskyblue;
+}
+
+.Navbar__list {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.Navbar__list li {
+  cursor: pointer;
+  transition: color 0.35s;
+}
+
+.Navbar__list li:hover {
+  color: lightcoral;
+}
