@@ -1,0 +1,28 @@
+.TodoItem {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.TodoItem__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  border-radius: 12px;
+}
+
+.TodoItem__item button {
+  border: 0;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: transform 0.35s;
+}
+
+.TodoItem__item button:hover {
+  transform: scale(2) rotate(360deg);
+}

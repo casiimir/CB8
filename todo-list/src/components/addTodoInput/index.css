@@ -1,0 +1,19 @@
+.AddTodoInput {
+  padding: 0 24px;
+  display: flex;
+  gap: 10px;
+}
+
+.AddTodoInput__input {
+  height: 40px;
+  width: 220px;
+  padding-left: 12px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.25);
+  border: 0;
+}
+
+.AddTodoInput__btn {
+  color: white;
+  box-shadow: 0 0 4px rgba(0,0,0,0.25);
+}
