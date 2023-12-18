@@ -1,7 +1,7 @@
 import "./index.css"
 
 const TodoItem = ({ todoData, setListData }) => {
-  const onHandleClick = (e) => {
+  const onHandleClick = () => {
     setListData(prev => prev.filter(item => item.id !== todoData.id))
   }
 
