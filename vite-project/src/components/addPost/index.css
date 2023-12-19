@@ -1,0 +1,26 @@
+.AddPost {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 12px 24px;
+  box-sizing: border-box;
+}
+
+.AddPost input,
+.AddPost textarea {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 0;
+}
+
+.AddPost__btns {
+  display: flex;
+  gap: 20px;
+}
+
+.AddPost__btns button,
+.AddPost__btns input {
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
