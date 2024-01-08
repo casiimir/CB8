@@ -1,0 +1,17 @@
+.Quote {
+  padding: 10px 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
+
+.Quote--content {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.Quote--author {
+  color: darkslategray;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
