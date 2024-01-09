@@ -1,0 +1,10 @@
+@mixin flex-container($dir: row,
+  $align: inherit,
+  $justify: inherit,
+  $gap: 0px) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}

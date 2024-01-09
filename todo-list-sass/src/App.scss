@@ -1,0 +1,34 @@
+@import './assets/css/variables.scss';
+@import './assets/css/mixins.scss';
+
+// .App {
+//   @include flex-container(column, flex-start, inherit, 20px);
+
+//   padding: 30px 60px;
+//   border: 2px solid $primary-color;
+//   border-radius: 12px;
+//   color: $primary-color;
+//   background-color: $bg-color;
+//   transition: all 0.35s;
+
+//   &:hover {
+//     background-color: lime;
+//   }
+
+//   .title {
+//     margin: 0;
+//   }
+
+//   .description {
+//     margin: 0;
+//   }
+
+// }
+
+.App {
+  @include flex-container(row, inherit, inherit, 20px);
+
+  padding: 24px 0;
+  width: 80vw;
+  overflow-x: auto;
+}

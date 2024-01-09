@@ -1,0 +1,19 @@
+@import '../../assets/css/variables.scss';
+@import '../../assets/css/mixins.scss';
+
+
+.TodoItem {
+  @include flex-container(row, center, center, 20px);
+
+  min-width: 300px;
+  padding: 6px 12px;
+  border: 1px solid lightgrey;
+  border-radius: 12px;
+  transition: all 0.35s;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $bg-color;
+    cursor: pointer;
+  }
+}
