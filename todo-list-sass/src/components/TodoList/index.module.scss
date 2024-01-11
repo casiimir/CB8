@@ -1,0 +1,6 @@
+@import '../../assets/css/mixins.scss';
+
+.TodoList {
+  @include flex-container(column, inherit, inherit, 20px);
+  padding: 24px;
+}

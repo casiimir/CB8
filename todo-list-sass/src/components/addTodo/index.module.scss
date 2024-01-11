@@ -1,0 +1,27 @@
+@import '../../assets/css/variables.scss';
+@import '../../assets/css/mixins.scss';
+
+.AddTodo {
+  @include flex-container(row, center, center, 20px);
+
+  .form {
+    @include flex-container(row, center, center, 20px);
+
+    .textInput {
+      height: 30px;
+      padding-left: 10px;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px dashed $primary-color;
+      outline: none;
+    }
+
+    .submitInput {
+      height: 30px;
+      width: 140px;
+      border-radius: 12px;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+}

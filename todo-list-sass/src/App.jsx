@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import TodoItem from './components/TodoItem'
-import './App.scss'
+import styles from './App.module.scss'
+import TodoList from './components/TodoList/TodoList'
+import AddTodo from './components/addTodo/AddTodo'
 
 function App() {
   const [todoList, setTodoList] = useState([])
@@ -12,11 +13,9 @@ function App() {
   }, [])
 
   return (
-    <div className='App'>
-      {/* <h1 className='title'>Salve!</h1>
-      <p className='description'>Lorem ipsum dolor sit amet.</p>
-      <em>Casi</em> */}
-      {todoList.map(todo => <TodoItem todoItemData={todo} key={todo.id} />)}
+    <div className={styles.App}>
+      <AddTodo setTodoList={setTodoList} />
+      <TodoList todoListData={todoList} setTodoList={setTodoList} />
     </div>
   )
 }

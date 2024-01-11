@@ -1,9 +1,9 @@
 # Esercizio 1 
 
-Sulla base dell'esercizio del giorno, leggere la seguente documentazione su SASS
-`https://sass-lang.com/guide/#modules`
+Sulla base dell'esercizio del giorno, riprendere l'esercizio della todoList creata nell'esercitazione precedente e aggiungete le logiche necessarie per implementare `Sass` e `CSS modules`.
 
-# Esercizio avanzato (ma strettamente consigliato)
+# Esercizio avanzato
 
-Ricreare una Todolist in React, riproponendo l'architettura dell'applicazione come studiato nelle lezioni su React.
-Suddivisa quindi per componenti, si chiede di applicare gli stili non più in CSS ma in SASS (quindi formato `scss`, su tutti gli stili di tutti componenti.)
+Aggiungere una logica a scelta di controlled component all'interno dell'applicazione todoList. Scegliete dove e come agire, es. la checkbox, al cui click sulla card trasforma lo stato di completed da `true` a `false` e viceversa.
+
+> Importante usare la logica dei 'controlled components', ovvero uno stato per una input che garantisce il valore e il metodo che modifica il valore stesso, della input (in questo caso).
