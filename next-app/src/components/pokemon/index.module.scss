@@ -1,0 +1,29 @@
+.Pokemon {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  font-size: 0.5rem;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  cursor: pointer;
+  filter: grayscale(0.6);
+  transition: all 0.35s;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.35);
+
+  }
+
+  img {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+}

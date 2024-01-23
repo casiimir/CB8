@@ -1,0 +1,47 @@
+.MainLayout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  background-color: transparent;
+  min-height: 100vh;
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    background-color: white;
+
+    ul {
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0 10px;
+
+      a {
+        color: black;
+        text-decoration: underline;
+        transition: color 0.35s;
+
+        &:hover {
+          color: lime;
+        }
+      }
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: -40px;
+    right: 40px;
+    height: 40px;
+    width: calc(100% - 40px);
+    background-color: white;
+    color: black;
+    font-size: 0.6rem;
+    text-align: right;
+  }
+}

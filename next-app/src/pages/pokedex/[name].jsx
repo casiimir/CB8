@@ -5,7 +5,6 @@ import styles from '../../styles/Pokedex.module.scss'
 export default function Pokedex() {
   const router = useRouter()
   const [pokemonData, setPokemonData] = useState({})
-  const [pokemonSearch, setPokemonSearch] = useState('')
 
   useEffect(() => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${router.query.name}`)
@@ -13,21 +12,9 @@ export default function Pokedex() {
       .then(data => setPokemonData(data))
   }, [router.query.name])
 
-  const onHandleSubmit = (e) => {
-    e.preventDefault();
-    router.push(pokemonSearch)
-  }
-
-  const onHandleChange = (e) => {
-    setPokemonSearch(e.target.value)
-  }
 
   return (
     <>
-      <form className={styles.form} onSubmit={onHandleSubmit}>
-        <input className={styles.inputPokemon} value={pokemonSearch} onChange={onHandleChange} type="text" placeholder='Cerca pokemon' required />
-        <input className={styles.btnPokemon} type="submit" value="Cerca" />
-      </form>
       {
         pokemonData.sprites ? <div className={styles.Pokedex}>
           <img className={styles.image} src={pokemonData.sprites.other.showdown.front_default} alt="" />
