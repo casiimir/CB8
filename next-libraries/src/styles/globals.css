@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+body {
+  background-color: #1b1b1b;
+  color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.react-calendar {
+  background-color: white !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: rgb(225, 0, 206) !important;
+}
