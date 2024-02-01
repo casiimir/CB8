@@ -1,0 +1,22 @@
+.PokemonCard {
+  display: flex;
+  flex-direction: column;
+
+  width: 258px;
+  border-radius: 12px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.35);
+}
+
+.text {
+  padding: 10px 20px;
+}
+
+.showMore {
+  cursor: pointer;
+  transition: background 0.35s;
+}
+
+.showMore:hover {
+  background-color: #5b12f9;
+  color: #ffffff;
+}

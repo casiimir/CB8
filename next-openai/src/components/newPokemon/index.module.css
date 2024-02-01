@@ -1,0 +1,8 @@
+.NewPokemon {
+}
+
+.NewPokemon img {
+  width: 258px;
+  height: 258px;
+  object-fit: cover;
+}
